@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://ball/scenes/Ground.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ball/scenes/Ball.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ball/scenes/Player.tscn" type="PackedScene" id=3]
+
+[node name="Main" type="Node"]
+
+[node name="Ball" parent="." instance=ExtResource( 2 )]
+position = Vector2( 422, 147 )
+
+[node name="Ground" parent="." instance=ExtResource( 1 )]
+position = Vector2( 448, 354 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 129, 43 )
